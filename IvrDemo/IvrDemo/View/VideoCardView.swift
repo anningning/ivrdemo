@@ -25,21 +25,16 @@ struct VideoCardView: View {
         self.video = video
     }
     
-    //海报图
-    var cardImage: some View {
-        Image(video.portraitImageName)
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: cardImageW, height: cardImageH)
-            .cornerRadius(14)
-            .padding([.top, .leading, .trailing], 10.0)
-    }
-
     var body: some View {
         VStack {
             
             //海报图
-            cardImage
+            Image(video.portraitImageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: cardImageW, height: cardImageH)
+                .cornerRadius(14)
+                .padding([.top, .leading, .trailing], 10.0)
                 
             VStack(alignment: .leading) {
                 Text(video.title)
