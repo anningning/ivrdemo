@@ -17,6 +17,7 @@ private struct TitleText: View {
     }
 }
 
+// App主页
 struct MainView: View {
     
     @Environment(ViewModel.self) private var model
@@ -68,7 +69,7 @@ struct MainView: View {
                                 .frame(height: TopIconHeight)
                         }
                         
-                        // cardlist
+                        // Card列表
                         VideoListView(videos: library.videos,
                                       cardSpacing: horizontalSpacing)
                         
@@ -77,6 +78,7 @@ struct MainView: View {
                     .padding([.top, .bottom], verticalPadding)
                     .navigationDestination(for: VideoInfo.self) { video in
                         
+                        // 影片详情页
                         VideoDetailView(video: video)
                             //.navigationTitle(video.title)
                             //.navigationBarHidden(true)

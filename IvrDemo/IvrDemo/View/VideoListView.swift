@@ -28,9 +28,10 @@ struct VideoListView: View {
                 HStack(spacing: cardSpacing) {
                     ForEach(videos) { video in
                         Group {
-                            // If the app initializes the view with a selection action closure,
-                            // display a video card button that calls it.
+                            
                             NavigationLink(value: video) {
+                                
+                                //每一个VideoCard
                                 VideoCardView(video: video)
                             }
                         }

@@ -13,8 +13,6 @@ struct VideoCardView: View {
     
     let video: VideoInfo
     
-    //圆角
-    let cornerRadius = 14.0
     
     //海报图宽高
     let cardImageW: CGFloat = 242
@@ -33,13 +31,14 @@ struct VideoCardView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width: cardImageW, height: cardImageH)
-            .cornerRadius(cornerRadius)
+            .cornerRadius(14)
             .padding([.top, .leading, .trailing], 10.0)
     }
 
     var body: some View {
         VStack {
             
+            //海报图
             cardImage
                 
             VStack(alignment: .leading) {
@@ -52,6 +51,7 @@ struct VideoCardView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                 
                 HStack {
+                    // 影片特色文案框
                     FeaturesView(features: video.info.features)
                 }
             }
@@ -61,7 +61,7 @@ struct VideoCardView: View {
         .frame(width: cardW) //这里不要限定height，可能会出现card上下边会被切割的情况
         .shadow(radius: 5)
         .hoverEffect()
-        .cornerRadius(cornerRadius)
+        .cornerRadius(14)
     }
 }
 
