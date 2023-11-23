@@ -34,14 +34,9 @@
 		2B69E8D92B04C2F400CB5ABA /* Globe.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2B69E8D82B04C2F300CB5ABA /* Globe.usdz */; };
 		2B99EF512B0743D7008BBEFD /* PanoramaVideoUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99EF502B0743D7008BBEFD /* PanoramaVideoUI.swift */; };
 		2BC4F5E22B05F7320024BEB5 /* PanoramaVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC4F5E12B05F7320024BEB5 /* PanoramaVideoView.swift */; };
-		2BC88B1D2B0348460069BA17 /* canglan.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2BC88B1C2B0348460069BA17 /* canglan.mov */; };
 		2BD8ACAB2B0760E0004E25D8 /* KiwiEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8ACAA2B0760E0004E25D8 /* KiwiEntity.swift */; };
 		2BD8ACAF2B07687C004E25D8 /* RotationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8ACAE2B07687C004E25D8 /* RotationComponent.swift */; };
 		2BD8ACB12B076A00004E25D8 /* KiwiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8ACB02B076A00004E25D8 /* KiwiView.swift */; };
-		2BDBCD9B2B0C8C48001B7F43 /* baishe.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBCD992B0C8C48001B7F43 /* baishe.mov */; };
-		2BDBCD9C2B0C8C48001B7F43 /* beizhe.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBCD9A2B0C8C48001B7F43 /* beizhe.mov */; };
-		2BDBCD9F2B0C8C51001B7F43 /* yuexia.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBCD9D2B0C8C51001B7F43 /* yuexia.mov */; };
-		2BDBCDA02B0C8C51001B7F43 /* wuzhu.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBCD9E2B0C8C51001B7F43 /* wuzhu.mov */; };
 		2BDBCDA22B0C9E38001B7F43 /* PreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDBCDA12B0C9E38001B7F43 /* PreView.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,14 +70,9 @@
 		2B69E8D82B04C2F300CB5ABA /* Globe.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Globe.usdz; sourceTree = "<group>"; };
 		2B99EF502B0743D7008BBEFD /* PanoramaVideoUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramaVideoUI.swift; sourceTree = "<group>"; };
 		2BC4F5E12B05F7320024BEB5 /* PanoramaVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramaVideoView.swift; sourceTree = "<group>"; };
-		2BC88B1C2B0348460069BA17 /* canglan.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = canglan.mov; sourceTree = "<group>"; };
 		2BD8ACAA2B0760E0004E25D8 /* KiwiEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiEntity.swift; sourceTree = "<group>"; };
 		2BD8ACAE2B07687C004E25D8 /* RotationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationComponent.swift; sourceTree = "<group>"; };
 		2BD8ACB02B076A00004E25D8 /* KiwiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiView.swift; sourceTree = "<group>"; };
-		2BDBCD992B0C8C48001B7F43 /* baishe.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = baishe.mov; sourceTree = "<group>"; };
-		2BDBCD9A2B0C8C48001B7F43 /* beizhe.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = beizhe.mov; sourceTree = "<group>"; };
-		2BDBCD9D2B0C8C51001B7F43 /* yuexia.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = yuexia.mov; sourceTree = "<group>"; };
-		2BDBCD9E2B0C8C51001B7F43 /* wuzhu.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = wuzhu.mov; sourceTree = "<group>"; };
 		2BDBCDA12B0C9E38001B7F43 /* PreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,7 +116,6 @@
 				2B2EB8422AFE0462008F2748 /* Controller */,
 				2B2EB8472AFE0A0D008F2748 /* Extension */,
 				2BD8ACA92B0760B5004E25D8 /* Kiwi */,
-				2B2EB8682B03109B008F2748 /* Videos */,
 				2B2EB82C2AFE00B5008F2748 /* Assets.xcassets */,
 				2B2EB8312AFE00B5008F2748 /* Info.plist */,
 				2B2EB82E2AFE00B5008F2748 /* Preview Content */,
@@ -198,18 +187,6 @@
 				2B2EB8642AFE1CEC008F2748 /* ViewModifier.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		2B2EB8682B03109B008F2748 /* Videos */ = {
-			isa = PBXGroup;
-			children = (
-				2BDBCD9E2B0C8C51001B7F43 /* wuzhu.mov */,
-				2BDBCD9D2B0C8C51001B7F43 /* yuexia.mov */,
-				2BDBCD992B0C8C48001B7F43 /* baishe.mov */,
-				2BDBCD9A2B0C8C48001B7F43 /* beizhe.mov */,
-				2BC88B1C2B0348460069BA17 /* canglan.mov */,
-			);
-			path = Videos;
 			sourceTree = "<group>";
 		};
 		2BD8ACA92B0760B5004E25D8 /* Kiwi */ = {
@@ -285,13 +262,8 @@
 			files = (
 				2B2EB8302AFE00B5008F2748 /* Preview Assets.xcassets in Resources */,
 				2B2EB8412AFE03DE008F2748 /* Videos.json in Resources */,
-				2BDBCD9C2B0C8C48001B7F43 /* beizhe.mov in Resources */,
-				2BDBCD9B2B0C8C48001B7F43 /* baishe.mov in Resources */,
-				2BDBCDA02B0C8C51001B7F43 /* wuzhu.mov in Resources */,
 				2B2EB82D2AFE00B5008F2748 /* Assets.xcassets in Resources */,
-				2BC88B1D2B0348460069BA17 /* canglan.mov in Resources */,
 				2B69E8D92B04C2F400CB5ABA /* Globe.usdz in Resources */,
-				2BDBCD9F2B0C8C51001B7F43 /* yuexia.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
