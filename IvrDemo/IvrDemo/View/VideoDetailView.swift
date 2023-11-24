@@ -111,6 +111,7 @@ struct VideoDetailView: View {
             }
             .padding([.leading, .top], 35.0)
             
+            
             Spacer()
             
             ZStack(alignment: .topTrailing) {
@@ -133,6 +134,9 @@ struct VideoDetailView: View {
             }
 
         }
+        .background(Color(hex: Int(video.bgColor, radix: 16) ?? 0, alpha: 0.64))
+    
+
     }
 }
 

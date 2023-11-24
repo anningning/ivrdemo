@@ -63,6 +63,10 @@ struct VideoInfo: Identifiable, Hashable, Codable {
     var imageData: Data {
         UIImage(named: portraitImageName)?.pngData() ?? Data()
     }
+    
+    // 背景颜色
+    var bgColor: String
+    
     /// 子信息
     let info: Info
     
