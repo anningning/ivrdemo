@@ -34,22 +34,32 @@ struct VideoDetailView: View {
                         Text("Back")
                     }
                 }
-                .padding(.bottom)
+                .padding(.bottom, 20)
                 
                 //片名
                 Text(video.title)
-                    .font(.title)
-                    .padding(.bottom, 4)
+                    .font(.largeTitle)
+                    .padding(.bottom, 10)
                 
                 
-                // 影片功能特色
-                FeaturesView(features: video.info.features)
-                    .padding(.bottom, 4)
+                // 影片特色: {3D} {全景} {30集全}
+                HStack(spacing: 8) {
+                    ForEach(video.info.features, id: \.self) {
+                        Text($0)
+                            .fixedSize()
+                            .font(.title2.weight(.bold))
+                            .padding([.leading, .trailing], 4)
+                            .padding([.top, .bottom], 4)
+                            .background(RoundedRectangle(cornerRadius: 5).stroke())
+                            .foregroundStyle(.secondary)
+                    }
+                }
+                .padding(.bottom, 10)
                 
                 // 详情描述
                 Text(video.description)
                     .font(.headline)
-                    .padding(.bottom, 12)
+                    .padding(.bottom, 20)
                 
                 // 演员信息
                 HStack(spacing: 10) {
@@ -72,7 +82,7 @@ struct VideoDetailView: View {
                                 .foregroundColor(.secondary)
                         }
                     }
-                }.padding()
+                }.padding(.bottom, 20)
                 
                 HStack(alignment: .center) {
                     //播放按钮
@@ -99,7 +109,7 @@ struct VideoDetailView: View {
                 }
                 
             }
-            .padding()
+            .padding([.leading, .top], 35.0)
             
             Spacer()
             
@@ -129,24 +139,6 @@ struct InfoLineView: View {
         HStack {
             Text("\(duration)")
                 .font(.subheadline.weight(.medium))
-        }
-    }
-}
-
-/// 影片特色UI
-struct FeaturesView: View {
-    let features: [String]
-    var body: some View {
-        HStack(spacing: 8) {
-            ForEach(features, id: \.self) {
-                Text($0)
-                    .fixedSize()
-                    .font(.caption2.weight(.bold))
-                    .padding([.leading, .trailing], 4)
-                    .padding([.top, .bottom], 4)
-                    .background(RoundedRectangle(cornerRadius: 5).stroke())
-                    .foregroundStyle(.secondary)
-            }
         }
     }
 }

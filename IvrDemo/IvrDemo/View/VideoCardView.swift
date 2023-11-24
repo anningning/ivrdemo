@@ -37,17 +37,28 @@ struct VideoCardView: View {
                 .padding([.top, .leading, .trailing], 10.0)
                 
             VStack(alignment: .leading) {
+                
+                //片名
                 Text(video.title)
                         .font(.title)
                         .frame(maxWidth: .infinity, alignment: .leading)
 
+                //简述
                 Text(video.shortdes)
                         .lineLimit(1)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 
-                HStack {
-                    // 影片特色文案框
-                    FeaturesView(features: video.info.features)
+                // 影片特色: {3D} {全景} {30集全}
+                HStack(spacing: 8) {
+                    ForEach(video.info.features, id: \.self) {
+                        Text($0)
+                            .fixedSize()
+                            .font(.caption2.weight(.bold))
+                            .padding([.leading, .trailing], 4)
+                            .padding([.top, .bottom], 4)
+                            .background(RoundedRectangle(cornerRadius: 5).stroke())
+                            .foregroundStyle(.secondary)
+                    }
                 }
             }
             .padding(12.0)
