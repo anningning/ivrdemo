@@ -79,6 +79,11 @@ struct VideoInfo: Identifiable, Hashable, Codable {
     }
 
     
+    //演员头像
+    func getActorImageName(index: Int) -> String {
+        return "\(videoType.rawValue)_s\(index+1)" 
+    }
+    
     
     /// 序列化VideoInfo的Info
     struct Info: Hashable, Codable {

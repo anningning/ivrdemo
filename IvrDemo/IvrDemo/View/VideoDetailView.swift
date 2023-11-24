@@ -32,8 +32,6 @@ struct VideoDetailView: View {
                         .font(.title)
                         .padding(.bottom, 4)
                     
-//                    InfoLineView(duration: video.info.duration)
-//                        .padding([.bottom], 4)
                     
                     // 影片功能特色
                     FeaturesView(features: video.info.features)
@@ -45,14 +43,33 @@ struct VideoDetailView: View {
                         .padding(.bottom, 12)
                     
                     // 演员信息
-                    RoleView(people: video.info.stars)
-                        .padding(.top, 1)
+                    HStack(spacing: 20) {
+                        ForEach(0..<video.info.stars.count, id: \.self) { index in
+                            VStack(alignment: .center, spacing: 5) {
+                                
+                                // 演员头像
+                                Image(video.getActorImageName(index: index))
+                                    .resizable()
+                                    .scaledToFit()
+                                    .clipShape(Circle())
+                                
+                                //演员名字
+                                Text(video.info.stars[index])
+                                    .font(.headline)
+                                
+                                //角色名字
+                                Text(video.info.roles[index])
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+                        }
+                    }.padding()
                 }
-                
                 
                 
                 HStack {
                     Group {
+                        //播放按钮
                         Button {
                             
                             //全景播放
@@ -83,7 +100,7 @@ struct VideoDetailView: View {
             // 预览图
             PreView(video: video)
                 .aspectRatio(16 / 9, contentMode: .fit)
-                .frame(width: 620)
+                .frame(width: 300)
                 .cornerRadius(20)
             
         }
@@ -120,16 +137,6 @@ struct FeaturesView: View {
     }
 }
 
-/// 演员UI
-struct RoleView: View {
-    let people: [String]
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text(people.formatted())
-                .foregroundStyle(.secondary)
-        }
-    }
-}
 
 #Preview {
     NavigationStack {
