@@ -25,7 +25,6 @@
 		2B2EB8552AFE15F0008F2748 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB8542AFE15F0008F2748 /* ViewExtension.swift */; };
 		2B2EB8572AFE1852008F2748 /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB8562AFE1852008F2748 /* VideoListView.swift */; };
 		2B2EB8592AFE18D0008F2748 /* VideoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB8582AFE18D0008F2748 /* VideoCardView.swift */; };
-		2B2EB85B2AFE1967008F2748 /* VideoInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB85A2AFE1967008F2748 /* VideoInfoView.swift */; };
 		2B2EB85D2AFE19CA008F2748 /* VideoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB85C2AFE19C9008F2748 /* VideoExtension.swift */; };
 		2B2EB8612AFE1BF9008F2748 /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB8602AFE1BF9008F2748 /* VideoDetailView.swift */; };
 		2B2EB8652AFE1CEC008F2748 /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB8642AFE1CEC008F2748 /* ViewModifier.swift */; };
@@ -61,7 +60,6 @@
 		2B2EB8542AFE15F0008F2748 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		2B2EB8562AFE1852008F2748 /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
 		2B2EB8582AFE18D0008F2748 /* VideoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardView.swift; sourceTree = "<group>"; };
-		2B2EB85A2AFE1967008F2748 /* VideoInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInfoView.swift; sourceTree = "<group>"; };
 		2B2EB85C2AFE19C9008F2748 /* VideoExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoExtension.swift; sourceTree = "<group>"; };
 		2B2EB8602AFE1BF9008F2748 /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
 		2B2EB8642AFE1CEC008F2748 /* ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 				2B2EB8522AFE1069008F2748 /* MainView.swift */,
 				2B2EB8562AFE1852008F2748 /* VideoListView.swift */,
 				2B2EB8582AFE18D0008F2748 /* VideoCardView.swift */,
-				2B2EB85A2AFE1967008F2748 /* VideoInfoView.swift */,
 				2B2EB8602AFE1BF9008F2748 /* VideoDetailView.swift */,
 				2B69E8D32B04B9C000CB5ABA /* ThreeDModelView.swift */,
 				2BC4F5E12B05F7320024BEB5 /* PanoramaVideoView.swift */,
@@ -297,7 +294,6 @@
 				2B2EB8612AFE1BF9008F2748 /* VideoDetailView.swift in Sources */,
 				2BD8ACB12B076A00004E25D8 /* KiwiView.swift in Sources */,
 				2B2EB84D2AFE0F3D008F2748 /* SystemPlayerView.swift in Sources */,
-				2B2EB85B2AFE1967008F2748 /* VideoInfoView.swift in Sources */,
 				2B2EB8272AFE00B4008F2748 /* IvrDemoApp.swift in Sources */,
 				2B2EB82B2AFE00B4008F2748 /* ImmersiveView.swift in Sources */,
 			);
