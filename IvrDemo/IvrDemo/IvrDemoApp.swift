@@ -31,6 +31,7 @@ struct IvrDemoApp: App {
                 .environment(player)
                 .environment(library)
                 .environment(model)
+                .aspectRatio(1280/720, contentMode: .fit)
         }
         .windowStyle(.plain)
         .defaultSize(width: 1280, height: 720)

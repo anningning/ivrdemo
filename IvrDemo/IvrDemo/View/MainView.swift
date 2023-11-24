@@ -51,6 +51,7 @@ struct MainView: View {
                         //顶部栏
                         HStack {
 
+                    
                             //左侧图标
                             Image("avpicon")
                                 .resizable()
