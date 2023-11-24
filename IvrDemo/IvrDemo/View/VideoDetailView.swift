@@ -10,6 +10,7 @@ import SwiftUI
 
 struct VideoDetailView: View {
     
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
     
@@ -17,57 +18,63 @@ struct VideoDetailView: View {
     @Environment(PlayController.self) private var player
     @Environment(VideoController.self) private var library
     
-    let margins = 30.0
-    
+
     var body: some View {
-        HStack(alignment: .top, spacing: margins) {
+        HStack(alignment: .top) {
             
             // 详情信息
             VStack(alignment: .leading) {
                 
-                VStack(alignment: .leading) {
-                    
-                    //片名
-                    Text(video.title)
-                        .font(.title)
-                        .padding(.bottom, 4)
-                    
-                    
-                    // 影片功能特色
-                    FeaturesView(features: video.info.features)
-                        .padding(.bottom, 4)
-                    
-                    // 详情描述
-                    Text(video.description)
-                        .font(.headline)
-                        .padding(.bottom, 12)
-                    
-                    // 演员信息
-                    HStack(spacing: 20) {
-                        ForEach(0..<video.info.stars.count, id: \.self) { index in
-                            VStack(alignment: .center, spacing: 5) {
-                                
-                                // 演员头像
-                                Image(video.getActorImageName(index: index))
-                                    .resizable()
-                                    .scaledToFit()
-                                    .clipShape(Circle())
-                                
-                                //演员名字
-                                Text(video.info.stars[index])
-                                    .font(.headline)
-                                
-                                //角色名字
-                                Text(video.info.roles[index])
-                                    .font(.subheadline)
-                                    .foregroundColor(.secondary)
-                            }
-                        }
-                    }.padding()
+                //返回按钮
+                Button(action: {
+                    self.mode.wrappedValue.dismiss()
+                }) {
+                    HStack {
+                        Image(systemName: "chevron.left")
+                        Text("Back")
+                    }
                 }
+                .padding(.bottom)
+                
+                //片名
+                Text(video.title)
+                    .font(.title)
+                    .padding(.bottom, 4)
                 
                 
-                HStack {
+                // 影片功能特色
+                FeaturesView(features: video.info.features)
+                    .padding(.bottom, 4)
+                
+                // 详情描述
+                Text(video.description)
+                    .font(.headline)
+                    .padding(.bottom, 12)
+                
+                // 演员信息
+                HStack(spacing: 10) {
+                    ForEach(0..<video.info.stars.count, id: \.self) { index in
+                        VStack(alignment: .center, spacing: 5) {
+                            
+                            // 演员头像
+                            Image(video.getActorImageName(index: index))
+                                .resizable()
+                                .scaledToFit()
+                                .clipShape(Circle())
+                            
+                            //演员名字
+                            Text(video.info.stars[index])
+                                .font(.headline)
+                            
+                            //角色名字
+                            Text(video.info.roles[index])
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                }.padding()
+                
+                HStack(alignment: .center) {
                     //播放按钮
                     Button {
                         
@@ -90,19 +97,28 @@ struct VideoDetailView: View {
                     }
                     .frame(width: 250.0, height: 100.0)
                 }
-                .frame(maxWidth: 420)
-                Spacer()
+                
             }
-            .padding(.leading, 30.0)
+            .padding()
             
-            // 背景图
-            Image(video.landscapeImageName)
-                .resizable()
-                .scaledToFill()
-            //.frame(width: 736, height: 720)
+            Spacer()
+            
+            ZStack(alignment: .topTrailing) {
+                
+                //背景图
+                Image(video.landscapeImageName)
+                    .resizable()
+                    .frame(width: 736, height: 720)
+
+                //logo
+                Image("iqiyi_logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 30)
+                    .padding([.top, .trailing], 35.0)
+            }
 
         }
-        .padding(margins)
     }
 }
 

@@ -80,8 +80,7 @@ struct MainView: View {
                         
                         // 影片详情页
                         VideoDetailView(video: video)
-                            //.navigationTitle(video.title)
-                            //.navigationBarHidden(true)
+                            .navigationBarHidden(true)
                         
                     }
                 }
