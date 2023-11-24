@@ -68,41 +68,39 @@ struct VideoDetailView: View {
                 
                 
                 HStack {
-                    Group {
-                        //播放按钮
-                        Button {
-                            
-                            //全景播放
-                            if video.videoType == VideoType.wuzhu{
-                                player.setPlayModel(.fullPanoSpace)
-                                Task {
-                                    await openImmersiveSpace(id: VideoType.wuzhu.rawValue)
-                                }
+                    //播放按钮
+                    Button {
+                        
+                        //全景播放事件
+                        if video.videoType == VideoType.wuzhu{
+                            player.setPlayModel(.fullPanoSpace)
+                            Task {
+                                await openImmersiveSpace(id: VideoType.wuzhu.rawValue)
                             }
-                            
-                            //普通播放
-                            else{
-                                player.prepareVideo(video, playmodel: .fullWindow)
-                            }
-                            
-                        } label: {
-                            Label("Play Video", systemImage: "play.fill")
-                                .frame(maxWidth: .infinity)
                         }
+                        
+                        //普通播放事件
+                        else{
+                            player.prepareVideo(video, playmodel: .fullWindow)
+                        }
+                        
+                    } label: {
+                        Label("点击播放", systemImage: "play.fill")
+                            .frame(maxWidth: .infinity)
                     }
-                    .frame(maxWidth: .infinity)
+                    .frame(width: 250.0, height: 100.0)
                 }
                 .frame(maxWidth: 420)
                 Spacer()
             }
             .padding(.leading, 30.0)
             
-            // 预览图
-            PreView(video: video)
-                .aspectRatio(16 / 9, contentMode: .fit)
-                .frame(width: 300)
-                .cornerRadius(20)
-            
+            // 背景图
+            Image(video.landscapeImageName)
+                .resizable()
+                .scaledToFill()
+            //.frame(width: 736, height: 720)
+
         }
         .padding(margins)
     }
