@@ -61,7 +61,7 @@ struct VideoInfo: Identifiable, Hashable, Codable {
     
     /// 图片地址
     var imageData: Data {
-        UIImage(named: landscapeImageName)?.pngData() ?? Data()
+        UIImage(named: portraitImageName)?.pngData() ?? Data()
     }
     /// 子信息
     let info: Info

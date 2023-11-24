@@ -116,9 +116,13 @@ struct VideoDetailView: View {
             ZStack(alignment: .topTrailing) {
                 
                 //背景图
-                Image(video.landscapeImageName)
-                    .resizable()
-                    .frame(width: 736, height: 720)
+                
+                GeometryReader { geometry in
+                        Image(video.landscapeImageName)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: geometry.size.width)
+                    }
 
                 //logo
                 Image("iqiyi_logo")
