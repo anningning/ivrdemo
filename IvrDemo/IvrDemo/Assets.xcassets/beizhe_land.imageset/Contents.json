@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "beizhe_land.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "beizhe_land.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

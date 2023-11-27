@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "baishe_s1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "baishe_s1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

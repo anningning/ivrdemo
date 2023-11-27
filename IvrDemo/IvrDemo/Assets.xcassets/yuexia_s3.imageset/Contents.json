@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "yuexia_s3.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "yuexia_s3.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "canglan_port.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "canglan_port.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

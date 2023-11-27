@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "beizhe_s4.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "beizhe_s4.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

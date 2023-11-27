@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "iqiyi_logo.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "iqiyi_logo.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "yuexia_port.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "yuexia_port.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
