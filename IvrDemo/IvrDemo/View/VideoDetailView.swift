@@ -41,6 +41,7 @@ struct VideoDetailView: View {
                     Text(video.title)
                         .font(.largeTitle)
                         .padding(.bottom, 10)
+                        .minimumScaleFactor(0.8)
                     
                     
                     // 影片特色: {3D} {全景} {30集全}
@@ -62,6 +63,7 @@ struct VideoDetailView: View {
                         .font(.system(size: 22))
                         .padding(.bottom, 15)
                         .lineLimit(4)
+                        .minimumScaleFactor(0.8)
 
                     
                     // 演员信息
@@ -92,29 +94,52 @@ struct VideoDetailView: View {
                         
                     
                     HStack(alignment: .center) {
-                        //播放按钮
-                        Button {
+                        
+                        if video.series > 0 {
                             
-                            //全景播放事件
-                            if video.videoType == VideoType.wuzhu{
-                                player.setPlayModel(.fullPanoSpace)
-                                Task {
-                                    await openImmersiveSpace(id: VideoType.wuzhu.rawValue)
-                                }
+                            // 剧集播放按钮
+                            ForEach(1...5, id: \.self) { index in
+                                Button(action: {
+                                    player.prepareVideo(video, playmodel: .fullWindow)
+                                }) {
+                                    Text("\(index)")
+                                        .frame(width: 72, height: 72)
+                                        .font(.system(size: 26))
+                                        .background(
+                                            RoundedRectangle(cornerRadius: 12)
+                                                .foregroundColor(Color.white.opacity(0.2))
+                                        )
+                                }.buttonStyle(PlainButtonStyle())
+
                             }
                             
-                            //普通播放事件
-                            else{
-                                player.prepareVideo(video, playmodel: .fullWindow)
-                            }
-                            
-                        } label: {
-                            Label("点击播放", systemImage: "play.fill")
-                                .frame(maxWidth: .infinity)
                         }
-                        .frame(width: 250.0, height: 100.0)
+                        else{
+                            
+                            // 非剧集播放按钮
+                            Button {
+                                
+                                //全景播放事件
+                                if video.videoType == VideoType.wuzhu{
+                                    player.setPlayModel(.fullPanoSpace)
+                                    Task {
+                                        await openImmersiveSpace(id: VideoType.wuzhu.rawValue)
+                                    }
+                                }
+                                
+                                //普通播放事件
+                                else{
+                                    player.prepareVideo(video, playmodel: .fullWindow)
+                                }
+                                
+                            } label: {
+                                Label("点击播放", systemImage: "play.fill")
+                                    .frame(maxWidth: .infinity)
+                            }
+                            .frame(width: 250.0, height: 100.0)
+                            
+                        }
                     }
-                    
                 }
                 .frame(width: geometry.size.width * 0.8)
                 .padding([.leading, .top], 35.0)

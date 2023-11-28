@@ -67,6 +67,9 @@ struct VideoInfo: Identifiable, Hashable, Codable {
     // 背景颜色
     var bgColor: String
     
+    // 是否为剧集 1/0
+    var series: Int
+    
     /// 子信息
     let info: Info
     
