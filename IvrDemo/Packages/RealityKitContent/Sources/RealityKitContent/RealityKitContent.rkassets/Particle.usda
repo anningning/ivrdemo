@@ -20,10 +20,11 @@ def Xform "Root"
             {
                 token birthDirection = "Constant"
                 token birthLocation = "Volume"
+                int64 burstCount = 30
                 float3 emissionDirection = (0, -1, 0)
                 double emissionDuration = 1
                 double emissionDurationVariation = 0
-                token emitterShape = "Plane"
+                token emitterShape = "Sphere"
                 double idleDuration = 0
                 double idleDurationVariation = 0
                 bool isLocal = 1
@@ -42,14 +43,18 @@ def Xform "Root"
                 def RealityKitStruct "mainEmitter"
                 {
                     float3 acceleration = (0, 0, 0)
+                    token animationRepeatMode = "AutoReverse"
                     token billboardMode = "Billboard"
-                    float birthRate = 600
+                    float birthRate = 100
                     float birthRateVariation = 10
                     token blendMode = "Alpha"
                     float colorEvolutionPower = 0
+                    int64 columnCount = 2
                     float dampingFactor = 0
                     float4 endColorA = (1, 1, 1, 1)
                     float4 endColorB = (1, 1, 1, 1)
+                    float frameRate = 0
+                    bool isAnimated = 0
                     bool isLightingEnabled = 0
                     float noiseAnimationSpeed = 2
                     float noiseScale = 1
@@ -59,25 +64,26 @@ def Xform "Root"
                     float particleAngleVariation = 180
                     float particleAngularVelocity = 0
                     float particleAngularVelocityVariation = 0.5
-                    asset particleImage = @ParticleEmitterPresetTextures/snow.png@
+                    asset particleImage = @ParticleEmitterPresetTextures/New Folder/flower.png@
                     double particleLifeSpan = 8
                     double particleLifeSpanVariation = 0.2
                     float particleMass = 1
                     float particleMassVariation = 0
-                    float particleSize = 0.001
+                    float particleSize = 0.005
                     float particleSizeVariation = 0.002
                     float3 radialGravityCenter = (1, 1, 0)
                     float radialGravityStrength = 0
+                    int64 rowCount = 2
                     float sizeMultiplierAtEndOfLifespan = 0.8
                     float sizeMultiplierAtEndOfLifespanPower = 10
                     token sortOrder = "IncreasingDepth"
                     float spreadingAngle = 0
-                    float4 startColorA = (1, 1, 1, 1)
+                    float4 startColorA = (0.9412141, 0.9049323, 1, 1)
                     float4 startColorB = (1, 1, 1, 1)
                     float stretchFactor = 0
-                    bool useEndColor = 1
+                    bool useEndColor = 0
                     bool useEndColorRange = 0
-                    bool useStartColorRange = 0
+                    bool useStartColorRange = 1
                     float3 vortexDirection = (0, 1, 0)
                     float vortexStrength = 0
                 }
