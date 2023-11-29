@@ -100,6 +100,7 @@
 		2B2EB8212AFE00B4008F2748 /* IvrDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2BCA7C6A2B172E5500B03946 /* Vdieos */,
 				2B69E8D82B04C2F300CB5ABA /* Globe.usdz */,
 				2B2EB8262AFE00B4008F2748 /* IvrDemoApp.swift */,
 				2B2EB8282AFE00B4008F2748 /* ContentView.swift */,
@@ -175,6 +176,13 @@
 				2B2EB8642AFE1CEC008F2748 /* ViewModifier.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		2BCA7C6A2B172E5500B03946 /* Vdieos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vdieos;
 			sourceTree = "<group>";
 		};
 		2BD8ACA92B0760B5004E25D8 /* Kiwi */ = {
