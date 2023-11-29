@@ -34,7 +34,7 @@ struct PlayerView: View {
             SystemPlayerView()
                
         case .custom:
-            InlinePlayerView()
+            SystemPlayerView()
         }
     }
 }

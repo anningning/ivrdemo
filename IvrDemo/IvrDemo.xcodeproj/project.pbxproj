@@ -20,7 +20,6 @@
 		2B2EB8492AFE0A37008F2748 /* AVExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB8482AFE0A37008F2748 /* AVExtension.swift */; };
 		2B2EB84B2AFE0E1F008F2748 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB84A2AFE0E1F008F2748 /* PlayerView.swift */; };
 		2B2EB84D2AFE0F3D008F2748 /* SystemPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB84C2AFE0F3D008F2748 /* SystemPlayerView.swift */; };
-		2B2EB84F2AFE0FA2008F2748 /* InlinePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB84E2AFE0FA2008F2748 /* InlinePlayerView.swift */; };
 		2B2EB8532AFE1069008F2748 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB8522AFE1069008F2748 /* MainView.swift */; };
 		2B2EB8552AFE15F0008F2748 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB8542AFE15F0008F2748 /* ViewExtension.swift */; };
 		2B2EB8572AFE1852008F2748 /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB8562AFE1852008F2748 /* VideoListView.swift */; };
@@ -36,7 +35,6 @@
 		2BD8ACAB2B0760E0004E25D8 /* KiwiEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8ACAA2B0760E0004E25D8 /* KiwiEntity.swift */; };
 		2BD8ACAF2B07687C004E25D8 /* RotationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8ACAE2B07687C004E25D8 /* RotationComponent.swift */; };
 		2BD8ACB12B076A00004E25D8 /* KiwiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8ACB02B076A00004E25D8 /* KiwiView.swift */; };
-		2BDBCDA22B0C9E38001B7F43 /* PreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDBCDA12B0C9E38001B7F43 /* PreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +53,6 @@
 		2B2EB8482AFE0A37008F2748 /* AVExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVExtension.swift; sourceTree = "<group>"; };
 		2B2EB84A2AFE0E1F008F2748 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		2B2EB84C2AFE0F3D008F2748 /* SystemPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemPlayerView.swift; sourceTree = "<group>"; };
-		2B2EB84E2AFE0FA2008F2748 /* InlinePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlinePlayerView.swift; sourceTree = "<group>"; };
 		2B2EB8522AFE1069008F2748 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2B2EB8542AFE15F0008F2748 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		2B2EB8562AFE1852008F2748 /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
@@ -71,7 +68,6 @@
 		2BD8ACAA2B0760E0004E25D8 /* KiwiEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiEntity.swift; sourceTree = "<group>"; };
 		2BD8ACAE2B07687C004E25D8 /* RotationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationComponent.swift; sourceTree = "<group>"; };
 		2BD8ACB02B076A00004E25D8 /* KiwiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiView.swift; sourceTree = "<group>"; };
-		2BDBCDA12B0C9E38001B7F43 /* PreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,11 +146,9 @@
 		2B2EB8392AFE0167008F2748 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2BDBCDA12B0C9E38001B7F43 /* PreView.swift */,
 				2B2EB82A2AFE00B4008F2748 /* ImmersiveView.swift */,
 				2B2EB84A2AFE0E1F008F2748 /* PlayerView.swift */,
 				2B2EB84C2AFE0F3D008F2748 /* SystemPlayerView.swift */,
-				2B2EB84E2AFE0FA2008F2748 /* InlinePlayerView.swift */,
 				2B2EB8522AFE1069008F2748 /* MainView.swift */,
 				2B2EB8562AFE1852008F2748 /* VideoListView.swift */,
 				2B2EB8582AFE18D0008F2748 /* VideoCardView.swift */,
@@ -271,8 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BDBCDA22B0C9E38001B7F43 /* PreView.swift in Sources */,
-				2B2EB84F2AFE0FA2008F2748 /* InlinePlayerView.swift in Sources */,
 				2B2EB8442AFE0475008F2748 /* VideoController.swift in Sources */,
 				2B2EB8462AFE07C9008F2748 /* PlayController.swift in Sources */,
 				2B2EB8652AFE1CEC008F2748 /* ViewModifier.swift in Sources */,
