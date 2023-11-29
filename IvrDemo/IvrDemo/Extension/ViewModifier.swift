@@ -121,7 +121,6 @@ private struct ImmersiveSpacePresentationModifier: ViewModifier {
                 Task {
                     // The selection path becomes empty when the user returns to the main library window.
                     if navigationPath.isEmpty {
-                        dismissWindow(id:"3dmodel")
                         
                         if isPresentingSpace {
                             await dismissSpace()
@@ -171,7 +170,7 @@ private struct FullScreenCoverModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .fullScreenCover(isPresented: $isPresentingPlayer) {
-                PlayerView()
+                SystemPlayerView()
                     .onAppear {
                         player.play()
                     }

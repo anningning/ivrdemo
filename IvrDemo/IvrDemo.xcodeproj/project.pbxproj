@@ -18,7 +18,6 @@
 		2B2EB8442AFE0475008F2748 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB8432AFE0475008F2748 /* VideoController.swift */; };
 		2B2EB8462AFE07C9008F2748 /* PlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB8452AFE07C9008F2748 /* PlayController.swift */; };
 		2B2EB8492AFE0A37008F2748 /* AVExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB8482AFE0A37008F2748 /* AVExtension.swift */; };
-		2B2EB84B2AFE0E1F008F2748 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB84A2AFE0E1F008F2748 /* PlayerView.swift */; };
 		2B2EB84D2AFE0F3D008F2748 /* SystemPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB84C2AFE0F3D008F2748 /* SystemPlayerView.swift */; };
 		2B2EB8532AFE1069008F2748 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB8522AFE1069008F2748 /* MainView.swift */; };
 		2B2EB8552AFE15F0008F2748 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EB8542AFE15F0008F2748 /* ViewExtension.swift */; };
@@ -51,7 +50,6 @@
 		2B2EB8432AFE0475008F2748 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		2B2EB8452AFE07C9008F2748 /* PlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayController.swift; sourceTree = "<group>"; };
 		2B2EB8482AFE0A37008F2748 /* AVExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVExtension.swift; sourceTree = "<group>"; };
-		2B2EB84A2AFE0E1F008F2748 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		2B2EB84C2AFE0F3D008F2748 /* SystemPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemPlayerView.swift; sourceTree = "<group>"; };
 		2B2EB8522AFE1069008F2748 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2B2EB8542AFE15F0008F2748 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				2B2EB82A2AFE00B4008F2748 /* ImmersiveView.swift */,
-				2B2EB84A2AFE0E1F008F2748 /* PlayerView.swift */,
 				2B2EB84C2AFE0F3D008F2748 /* SystemPlayerView.swift */,
 				2B2EB8522AFE1069008F2748 /* MainView.swift */,
 				2B2EB8562AFE1852008F2748 /* VideoListView.swift */,
@@ -271,7 +268,6 @@
 				2BD8ACAF2B07687C004E25D8 /* RotationComponent.swift in Sources */,
 				2B2EB85D2AFE19CA008F2748 /* VideoExtension.swift in Sources */,
 				2B2EB8292AFE00B4008F2748 /* ContentView.swift in Sources */,
-				2B2EB84B2AFE0E1F008F2748 /* PlayerView.swift in Sources */,
 				2B2EB8572AFE1852008F2748 /* VideoListView.swift in Sources */,
 				2B2EB8592AFE18D0008F2748 /* VideoCardView.swift in Sources */,
 				2BC4F5E22B05F7320024BEB5 /* PanoramaVideoView.swift in Sources */,

@@ -24,7 +24,7 @@ struct ContentView: View {
         switch player.playModel {
         case .fullWindow:
             // 播放View
-            PlayerView()
+            SystemPlayerView()
                 .onAppear {
                     player.play()
                 }
