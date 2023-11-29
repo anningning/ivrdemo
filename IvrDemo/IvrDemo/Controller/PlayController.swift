@@ -54,8 +54,6 @@ enum PlayerModel {
     private var playerViewController: AVPlayerViewController? = nil
     private var playerViewControllerDelegate: AVPlayerViewControllerDelegate? = nil
     
-    private(set) var shouldAutoPlay = true
-    
     
     /// A token for periodic observation of the player's time.
     private var timeObserver: Any? = nil
@@ -145,10 +143,9 @@ enum PlayerModel {
     ///   - video: The video to load for playback.
     ///   - presentation: The style in which to present the player.
     ///   - autoplay: A Boolean value that indicates whether to auto play that the content when presented.
-    func prepareVideo(_ video: VideoInfo, playmodel: PlayerModel = .inline, autoplay: Bool = true) {
+    func prepareVideo(_ video: VideoInfo, playmodel: PlayerModel = .inline) {
         // Update the model state for the request.
         currentItem = video
-        shouldAutoPlay = autoplay
         isPlaybackComplete = false
         
         switch playmodel {

@@ -75,6 +75,11 @@ struct VideoInfo: Identifiable, Hashable, Codable {
     
     /// URL获取
     var resolvedURL: URL {
+        
+        if videoType == VideoType.baishe{
+            return Bundle.main.url(forResource: videoType.rawValue, withExtension: "mp4")!
+        }
+        
         if urltype == "local"{
             return Bundle.main.url(forResource: videoType.rawValue, withExtension: "mov")!
         }
