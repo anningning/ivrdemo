@@ -32,9 +32,13 @@ struct IvrDemoApp: App {
                 .environment(library)
                 .environment(model)
                 .aspectRatio(model.ScreenWidth/model.ScreenHeight, contentMode: .fit)
+                .frame(minWidth: model.ScreenWidth * 0.8, maxWidth: model.ScreenWidth * 1.2,
+                       minHeight: model.ScreenHeight * 0.8, maxHeight: model.ScreenHeight * 1.2)
         }
         .windowStyle(.plain)
+        .windowResizability(.contentSize)
         .defaultSize(width: model.ScreenWidth, height: model.ScreenHeight)
+        
 
         // 苍兰诀氛围
         ImmersiveSpace(id: VideoType.canglan.rawValue){
