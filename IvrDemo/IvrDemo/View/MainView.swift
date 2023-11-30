@@ -55,24 +55,27 @@ struct MainView: View {
                             //左侧图标
                             Image("avpicon")
                                 .resizable()
-                                .padding(.leading, 25.0)
                                 .scaledToFit()
-                                .frame(height: TopIconHeight)
+                                .frame(height: 54)
+                                .padding(.bottom, 36.0)
+                                .padding(.leading, 46.0)
+                                .frame(height: 24)
 
                             Spacer()
                             
                             // logo
                             Image("iqiyi_logo")
-                                .resizable()
                                 .scaledToFit()
-                                .padding(.trailing, outerPadding)
-                                .padding(.top, 8)
-                                .frame(height: TopIconHeight)
+                                .padding(.trailing, 54.0)
+                                .padding(.bottom, 36.0)
+                                .frame(height: 24)
                         }
+                        .padding(.top, 46.0)
                         
                         // Card列表
                         VideoListView(videos: library.videos,
                                       cardSpacing: horizontalSpacing)
+                        .padding(.leading, 16.0)
                         
                     }
                     .opacity(model.isTitleFinished ? 1 : 0)
@@ -122,7 +125,7 @@ struct MainView: View {
     }
     
     var TopIconHeight: Double {
-        valueFor(visionOS: 40)
+        valueFor(visionOS: 46)
     }
 
 }

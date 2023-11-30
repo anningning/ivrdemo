@@ -11,7 +11,9 @@ import SwiftUI
 @Observable
 class ViewModel {
     
-    // MARK: - Navigation
+    let ScreenWidth: CGFloat = 1400
+    let ScreenHeight: CGFloat = 700
+    
     var titleText: String = ""
     var isTitleFinished: Bool = false
     var finalTitle: String = "IQIYI"
